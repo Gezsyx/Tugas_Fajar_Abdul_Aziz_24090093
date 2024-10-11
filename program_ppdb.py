@@ -9,10 +9,10 @@ tahun = int (input("Tahun Lahir:"))
 umur = 2024 - tahun
 
 
-if ( umur <= 17 and umur>=13 ):
+if ( umur <= 17 and umur>=12 ):
     pilih_jalur = 'Pilih Jalur PPDB'
 
-    print("="*10)
+    print("="*100)
     print(pilih_jalur)
     print("Afirmasi")
     print("Zonasi")
@@ -22,7 +22,7 @@ if ( umur <= 17 and umur>=13 ):
 
     if jalur.capitalize() in ("Afirmasi", "Zonasi", "Prestasi"):
         if jalur.capitalize() == "Afirmasi":
-            print("="*10)
+            print("="*100)
             print(jalur.upper())
             nilai = float(input("Nilai Rata-Rata Ijazah (0.0):"))
             prestasi = int (input("Jumlah Prestasi Yang Dimiliki (Ketik '0' Jika Tidak Punya):"))
@@ -40,11 +40,11 @@ if ( umur <= 17 and umur>=13 ):
                     if dtks.upper() == "KIP":
 
                         no_dtks = int(input("No KIP:"))
-                        if no_dtks >= 100 and nilai >= 7.4 :
+                        if no_dtks >= 100 and nilai >= 7.2 :
                             hasil = ("SELAMAT ANDA DITERIMA!")
 
 
-                        elif no_dtks >= 100 and nilai < 7.4:
+                        elif no_dtks >= 100 and nilai < 7.2:
                             hasil = ("MAAF ANDA TIDAK DITERIMA!")
         
                         else:
@@ -54,11 +54,11 @@ if ( umur <= 17 and umur>=13 ):
                     elif dtks.upper() == "KKS":
 
                         no_dtks = int(input("No KKS:"))
-                        if no_dtks >= 100 and nilai >= 7.4 :
+                        if no_dtks >= 100 and nilai >= 7.2 :
                             hasil = ("SELAMAT ANDA DITERIMA!")
 
 
-                        elif no_dtks >= 100 and nilai < 7.4:
+                        elif no_dtks >= 100 and nilai < 7.2:
                             hasil = ("MAAF ANDA TIDAK DITERIMA!")
 
 
@@ -69,10 +69,10 @@ if ( umur <= 17 and umur>=13 ):
                     elif dtks.upper() == "KPS":
 
                         no_dtks = int(input("No KPS:"))
-                        if no_dtks >= 100 and nilai >= 7.4 :
+                        if no_dtks >= 100 and nilai >= 7.2 :
                             hasil = ("SELAMAT ANDA DITERIMA!")
 
-                        elif no_dtks >= 100 and nilai < 7.4:
+                        elif no_dtks >= 100 and nilai < 7.2:
                             hasil = ("MAAF ANDA TIDAK DITERIMA!")
 
 
@@ -82,11 +82,11 @@ if ( umur <= 17 and umur>=13 ):
                     elif dtks.upper() == "PKH":
 
                         no_dtks = int(input("No PKH:"))
-                        if no_dtks >= 100 and nilai >= 7.4 :
+                        if no_dtks >= 100 and nilai >= 7.2 :
                             hasil = ("SELAMAT ANDA DITERIMA!")
 
 
-                        elif no_dtks >= 100 and nilai < 7.4:
+                        elif no_dtks >= 100 and nilai < 7.2:
                             hasil = ("MAAF ANDA TIDAK DITERIMA!")
 
                         else:
@@ -108,8 +108,9 @@ if ( umur <= 17 and umur>=13 ):
                     print("NO Program:", no_dtks)
                     print(hasil)
     
+
         elif jalur.capitalize() == "Zonasi":
-            print("="*10)
+            print("="*100)
             print(jalur.upper())
             nilai = float(input("Nilai Rata-Rata Ijazah (0.0):"))
             prestasi = int (input("Jumlah Prestasi Yang Dimiliki (Ketik '0' Jika Tidak Punya):"))
@@ -139,8 +140,10 @@ if ( umur <= 17 and umur>=13 ):
             print("JARAK RUMAH:", jarak,"KM")
             print (hasil)
 
+
+
         elif jalur.capitalize() == "Prestasi":
-            print("="*10)
+            print("="*100)
             print(jalur.upper())
             nilai = float(input("Nilai Rata-Rata Ijazah (0.0):"))
 
@@ -197,7 +200,7 @@ else:
         #     no_kip = int (input("Masukan Nomor KIP/Kartu PKH:"))
         #     if no_kip >=100000:
                 # hasil = ("Selamat Anda Diterima")
-                # print("="*10)
+                # print("="*100)
                 # print ("NAMA:", nama.upper())
                 # print ("NIK:", nik)
                 # print ("NISN:", nisn)
